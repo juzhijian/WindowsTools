@@ -35,17 +35,17 @@ TCHAR const *szParameters[]={
 };
 
 TCHAR const * showNotice="\
-    1. Run normaly\n\
-    2. Install automanic update service\n\
-    3. Uninstall automanic update service\n\
-    4. Reset Hosts File\n\
-    5. Reset Hosts File(Set to Default Hosts File)\n\
-    6. Show help message\n\
-    7. Open debug mode to listen service\n\
-    8. Stop Service\n\
-    9. Start Service\n\
-   10. Open \".ini\" file\n\
-   11. Install automantic update process(via normal mode to start)\n\
+    1. 正常运行\n\
+    2. 安装自动更新服务\n\
+    3. 卸载自动更新服务\n\
+    4. 重置Hosts文件\n\
+    5. 重置Hosts文件(设置为默认主机文件)\n\
+    6. 显示帮助消息\n\
+    7. 打开调试模式以侦听服务\n\
+    8. 停止服务\n\
+    9. 启动服务\n\
+   10. 打开 \".ini\" 文件\n\
+   11. 安装自动更新进程(通过正常模式启动)\n\
     ";
 const int max_input_int=11;
 
@@ -53,11 +53,11 @@ const int max_input_int=11;
 TCHAR _[20]=_T("");
 
 int _tmain(int,TCHAR const **){
-	SetConsoleTitle(_T("Run Execute"));
+	SetConsoleTitle(_T("运行执行"));
 	int inputn;
 	const TCHAR * str=_T("");
-	_tprintf(_T("Program mode list:\n%s\n"),showNotice);
-	_tprintf(_T("Please enter the number what you want to run:"));
+	_tprintf(_T("程序模式列表:\n%s\n"),showNotice);
+	_tprintf(_T("请输入要运行的数字:"));
 	_tscanf(_T("%d"),&inputn);
 	if (inputn>max_input_int || inputn<1) abort();
 	switch (inputn){
