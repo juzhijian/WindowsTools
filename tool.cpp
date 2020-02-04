@@ -41,7 +41,7 @@
 
 //Hosts file web address set
 //#define hostsfile1 _T("https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts")
-#define hostsfile _T("https://coding.net/u/juzhijian/p/hosts/git/raw/master/hosts-files/hosts")
+#define hostsfile _T("https://juzhijian.coding.net/p/hosts/d/hosts/git/raw/master/hosts-files/hosts")
 
 #ifdef _LOCAL
 	#undef hostsfile
